@@ -187,7 +187,7 @@ stats = {
 
         <div class="modal-content" id="content_baseballsurvivor">
           <h1>Base Ball Surviovr</h1>
-          <video class="half" src="./works/baseball.mp4" loop autoplay></video>
+          <video class="half" src="./works/baseball.mp4" loop autoplay muted playsinline></video>
           <p>ピッチャーが投げてくる球を打ち返して倒していく2Dゲームです。RaylibというC言語で開発されたライブラリのゲームジャムに参加し作った作品で、審査員特別賞をいただきました。</p>
           <p>開発はC言語でおこない、emscriptenでwasmにコンパイルしウェブ上で遊べるように公開しています。この作品はC言語でつくりましたが、作品の小ささもあり開発がとても楽しくできました。</p>
           <p>C99には指示初期化子があり、player = (Player){.health = 100, .power = 3.2f} のように指定した値を任意値で初期化し、指定してない物は0で初期化されます。これがとても強力で、敵のバリエーションを指示初期化子で簡単に作ることができました。
