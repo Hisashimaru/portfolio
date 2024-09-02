@@ -1,0 +1,214 @@
+body {
+  background-color: #262335;
+  color: whitesmoke;
+  margin: 0;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 16px;
+  padding-left: 5%;
+  background-color: #41414f;
+}
+
+fieldset {
+  border: 4px double whitesmoke;
+  margin-bottom: 30px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+legend {
+  font-size: 24px;
+  padding: 10px;
+}
+
+li {
+  margin-top: 6px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.main-container {
+  max-width: 55%;
+  margin: auto;
+}
+  
+.card {
+  background: #41414f;
+  border: 1px solid #000;
+  width: 20%;
+  min-width: 300px;
+}
+
+.card .touch {
+  cursor: pointer;
+}
+
+
+.card .info {
+  margin-left: 8px;
+  margin-right: 8px;
+  line-height: 1.3em;
+  color: rgb(204, 204, 204);
+}
+
+.card .info-text {
+  min-height: 40px;
+}
+
+.card .info-ex {
+  font-size: 14px;
+  display: flex;
+}
+
+.card .tools {
+  background-image: url(./icons/hammer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 24px;
+}
+
+.card .time {
+  background-image: url(./icons/timer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 24px;
+  margin-left: 16px;
+}
+
+.card .year {
+  padding-left: 24px;
+}
+
+.card h3 {
+  color: white;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.card .thumb {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card .link {
+  width: auto;
+  height: 32px;
+  object-fit: contain;
+  margin: 4px;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.card p {
+  font-size: 0.95em;
+  margin: 0;
+}
+
+
+
+
+
+
+
+/* Modal Window */
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(15, 13, 20, 0.9);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-close-foot{
+  cursor: pointer;
+  margin: 15px;
+  font-size: 1.2em;
+}
+
+.modal-content{
+  background: #262335;
+  text-align: left;
+  padding: 30px;
+  display: none;
+}
+
+.modal-content video{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.modal-content video.half{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.modal-content img{
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* for smartphone */
+@media screen and (max-width: 480px) {
+  .main-container {
+    max-width: 100%;
+  }
+}
